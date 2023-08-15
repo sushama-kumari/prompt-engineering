@@ -1,0 +1,6 @@
+prompt_template ='''Below is an instruction that describes a task. Write a response in detail that appropriately completes the request.
+
+### Instruction:
+{question}
+### Response:
+'''
