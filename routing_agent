@@ -1,0 +1,21 @@
+prompt_template = '''Analyze the question the text delimited by triple backticks.
+    Identify if the question is csv or conceptual.
+    A numeric question is a question that requires a dataset in the form of csv to answer the question.
+    The table contains information on US treasury securities.
+    Here's a short description based on the columns:
+        -Cusip: A unique identifier for each security.
+        -Coupon: The coupon rate of the security (interest rate).
+        -Moody's Rating: Moody's credit rating for the security (if available).
+        -Price.Bid: The bid price at which buyers are willing to purchase the security.
+        -Price.Ask: The ask price at which sellers are willing to sell the security.
+        -Yield.Bid: The yield (rate of return) associated with the bid price.
+        -Ask.Yield.to.Maturity: The yield to maturity associated with the ask price.
+        -Maturity.Year/Month/Day: The maturity date of the security.
+        -Quantity.Bid.total/Quantity.Bid.min: Total and minimum quantity of bids.
+        -Quantity.Ask.total/Quantity.Ask.min: Total and minimum quantity of asks.
+        -Security.Type: The type of security (e.g., Bills, Notes, Bonds)
+    A philosophical question is a question that refers to the theory and knowledge of bonds and the methodology of how it works.
+    You will answer with either 'CSV' or 'Conceptual'
+    Think step by step
+    {question}
+'''
